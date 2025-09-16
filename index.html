@@ -298,8 +298,8 @@ function zeigeErgebnis() {
        <div class="card">
       <h3 class="card-title">📏 Mindestanforderungen:</h3>
       <ul class="konfig-liste">
-        <li><span class="label">Verbreiterung (X1 Maß)</span><span>${details ? details.verbr : '–'} mm</span></li>
-        <li><span class="label">Kastenüberstand (X2 Maß)</span><span>${details ? details.ueber : '–'} mm</span></li>
+        <li><span class="label">Verbreiterung (X2 Maß)</span><span>${details ? details.verbr : '–'} mm</span></li>
+        <li><span class="label">Kastenüberstand (X1 Maß)</span><span>${details ? details.ueber : '–'} mm</span></li>
       </ul>
       
        <div class="card">
@@ -313,8 +313,8 @@ function zeigeErgebnis() {
        <div class="card">
       <h3 class="card-title">✅ Ergebnis:</h3>
       <ul class="konfig-liste">
-        <li><span class="label">Empfohlene Verbreiterung (X1 Maß)</span><span>${bestSumTxt}&nbsp;mm</span></li>
-        <li><span class="label">Kastenüberstand (X2 Maß)</span><span>${details && best ? (details.ueber + best.sum - (details.verbr - eckVal)).toFixed(1).replace('.0', '') + ' mm' : '–'}</span></li>
+        <li><span class="label">Empfohlene Verbreiterung (X2 Maß)</span><span>${bestSumTxt}&nbsp;mm</span></li>
+        <li><span class="label">Kastenüberstand (X1 Maß)</span><span>${details && best ? (details.ueber + best.sum - (details.verbr - eckVal)).toFixed(1).replace('.0', '') + ' mm' : '–'}</span></li>
         <li><span class="label">Gewählte Eckkopplung</span><span>${selEckkopplung.options[selEckkopplung.selectedIndex].text}</span></li>
       </ul>             
          
